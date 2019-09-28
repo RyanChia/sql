@@ -1,5 +1,16 @@
 
 # simple selection
-
 Select * 
 From films; 
+
+#multiple selection 
+SELECT title, release_year, country
+FROM films;
+
+
+# what do you think is the difference between the following? 
+SELECT COUNT(birthdate)
+FROM people;
+
+SELECT COUNT(DISTINCT (birthdate))
+FROM people;
