@@ -1,0 +1,9 @@
+#select movie starring "50 Cent" 
+
+select f.title,r.role, p.name
+from films as f
+inner join roles as r
+on f.id = r.film_id
+inner join people as p
+on r.person_id = p.id
+where p.name = '50 Cent';
